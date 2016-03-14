@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>Template</title>
+	<meta name="description" content="Создание адаптивного сайта" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Сбрасываем стили по умолчанию в разных браузерах -->
+	<link rel="stylesheet" href="css/reset.min.css" />
+	<!-- Подключаем иконки -->
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+	<!-- Подключаем главный файл стилей -->
+	<link rel="stylesheet" href="css/main.min.css" />
+	<script src="libs/jquery/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+	<div class="mySlider">
+		<span class="arrowLeft"><i class="fa fa-arrow-circle-left fa-4x"></i></span>
+		<span class="arrowRight"><i class="fa fa-arrow-circle-right fa-4x"></i></span>
+		<div class="mainContainer"></div>
+	</div>
+	<div class="table">
+		<table>
+			<tr>
+				<td><span>Название</span></td>
+				<td><span>Цена с учетом скидки</span></td>
+			</tr>
+			<tr>
+				<td>Итог</td>
+				<td>Всего <span class="allSum"></span> руб.</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Скидка <span class="allDiscount"></span> руб.</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Сумма без скидки <span class="allSumWD"></span> руб.</td>
+			</tr>
+		</table>
+	</div>
+	<script src="js/common.min.js"></script>
+</body>
+</html>

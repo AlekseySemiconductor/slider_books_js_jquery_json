@@ -1,0 +1,109 @@
+.container, [class*='col-'], .container-fluid {
+	padding: 0px;
+}
+
+.row {
+	margin: 0px;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #fff;
+	color: #000;
+	min-width: 320px;
+	position: relative;
+	.mySlider {
+		margin: 20px auto;
+		height: 470px;
+		position: relative;
+		span {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 30%;
+			z-index: 2;
+			i {
+				color: #F00;
+				&:hover {
+					cursor: pointer;
+					color: #00F;
+				}
+			}
+		}
+		.arrowLeft {
+			left: 0%;
+			-ms-transform: translate(20%, -50%);
+			-webkit-transform: translate(20%, -50%);
+			-moz-transform: translate(20%, -50%);
+			-o-transform: translate(20%, -50%);
+			transform: translate(20%, -50%);
+		}
+		.arrowRight {
+			right: 0%;
+			-ms-transform: translate(0%, -50%);
+			-webkit-transform: translate(0%, -50%);
+			-moz-transform: translate(0%, -50%);
+			-o-transform: translate(0%, -50%);
+			transform: translate(0%, -50%);
+		}
+		&>.mainContainer {
+			position: absolute;
+			&> div {
+				width: 300px;
+				height: 450px;
+				margin: 10px;
+				float: left;
+				.nameText, .authorText, .priceText, .discountText {
+					text-align: center;
+					font-size: 14px;
+					padding: 10px 0px;
+				}
+				.nameText {
+					height: 50px;
+					color: #00F;
+				}
+				.authorText {
+					height: 40px;
+					font-size: 16px;
+				}
+				.priceText {
+					height: 40px;
+				}
+				.discountText {
+					font-style: italic;
+				}
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			.clicked {
+				box-shadow: 0 0 15px rgb(255,0,0);
+			}
+		}
+	}
+	.table {
+		display: none;
+		table {
+			margin: 50px auto 20px;
+			border: 1px solid black;
+			tr {
+				td {
+					border: 1px solid black;
+					padding: 10px;
+				}
+			}
+			tr:first-child {
+				span {
+					font-weight: bold;
+				}
+			}
+			tr:nth-last-child(-n+3) {
+				td {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
